@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zoo Planet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+    <h1>ZOO PLANET</h1>
+    <p>Welcome to Our Zoo Planet</p>
+</div>
+
+<div class="content">
+
+<h2>Introduction</h2>
+
+<p>
+Zoo Planet is a web-based application that helps manage the details
+of animals, visitors, and ticketing operations at a zoo.
+It simplifies administration, improves visitor experience,
+and ensures accurate record keeping.
+</p>
+
+<h2>Our Animals</h2>
+
+<div class="gallery">
+
+<div class="animal">
+<img src="Lion.jpg" alt="Lion">
+<p>Lion</p>
+</div>
+
+<div class="animal">
+<img src="Tiger.jpg" alt="Tiger">
+<p>Tiger</p>
+</div>
+
+<div class="animal">
+<img src="Elephant.jpg" alt="Elephant">
+<p>Elephant</p>
+</div>
+
+<div class="animal">
+<img src="Deer.jpg" alt="Deer">
+<p>Deer</p>
+</div>
+
+<div class="animal">
+<img src="Zebra.jpg" alt="Zebra">
+<p>Zebra</p>
+</div>
+
+<div class="animal">
+<img src="Giraffe.jpg" alt="Giraffe">
+<p>Giraffe</p>
+</div>
+
+</div>
+
+
+<h2>System Features</h2>
+
+<div class="buttons">
+
+<a href="booking.php" class="feature-btn">Online Ticket Booking</a>
+
+<a href="inquiry_form.php" class="feature-btn">Online Inquiries</a>
+
+<a href="updates.php" class="feature-btn">Regular Updates</a>
+
+
+</div>
+
+</div>
+
+
+<div class="footer">
+<p>TY B.Sc. Computer Science | Zoo Planet Project</p>
+</div>
+
+
+<!-- JavaScript -->
+
+<script>
+
+const buttons = document.querySelectorAll(".feature-btn");
+
+buttons.forEach(btn => {
+
+btn.addEventListener("click", () => {
+
+buttons.forEach(b => b.classList.remove("active"));
+
+btn.classList.add("active");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

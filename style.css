@@ -1,0 +1,178 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+    background-color: #f2f7f2;
+}
+
+/* ===== Header ===== */
+.header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* ===== Main Content ===== */
+.content {
+    background-color: white;
+    width: 75%;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+}
+
+.content h2 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ===== Buttons Layout (FIXED) ===== */
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+/* ===== System Feature Buttons ===== */
+.feature-btn {
+    padding: 16px 28px;
+    background: linear-gradient(135deg, #42a5f5, #26a69a);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Hover effect */
+.feature-btn:hover {
+    background: linear-gradient(135deg, #1e88e5, #00897b);
+    transform: translateY(-2px);
+}
+
+/* Active (pressed) effect */
+.feature-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+/* When button is selected */
+.feature-btn.active {
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+}
+
+/* ===== Animal Gallery ===== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.animal {
+    text-align: center;
+}
+
+.animal img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 5px 12px rgba(0,0,0,0.2);
+}
+
+.animal p {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* ===== Admin Section ===== */
+.admin-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 70px auto;
+}
+
+/* Side Images */
+.side-image img {
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Admin Login Box */
+.admin-login {
+    width: 330px;
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 0px 8px 22px rgba(0,0,0,0.3);
+}
+
+.admin-login h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.admin-login input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.admin-login button {
+    padding: 10px 25px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-login button:hover {
+    background-color: #1b5e20;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 50px;
+}

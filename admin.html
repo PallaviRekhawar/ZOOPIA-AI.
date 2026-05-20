@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Login</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f2f7f2;
+margin:0;
+}
+
+/* Header */
+.header{
+background:#2e7d32;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* Admin Section */
+.admin-section{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+margin-top:80px;
+}
+
+/* Side Images */
+.side-image img{
+width:260px;
+height:320px;
+object-fit:cover;
+border-radius:14px;
+box-shadow:0px 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Login Box */
+.admin-login{
+width:330px;
+background:white;
+padding:30px;
+text-align:center;
+border-radius:14px;
+box-shadow:0px 8px 22px rgba(0,0,0,0.3);
+}
+
+.admin-login h2{
+color:#2e7d32;
+margin-bottom:15px;
+}
+
+.admin-login input{
+width:90%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.admin-login button{
+padding:10px 25px;
+background-color:#2e7d32;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.admin-login button:hover{
+background-color:#1b5e20;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+<h1>Admin Login Page</h1>
+</div>
+
+<div class="admin-section">
+
+<div class="side-image">
+<img src="Parrot.jpg">
+</div>
+
+<div class="admin-login">
+
+<h2>Admin Login</h2>
+
+<form action="admin_login.php" method="post">
+
+<input type="text" name="username" placeholder="Admin Username" required>
+
+<input type="password" name="password" placeholder="Admin Password" required>
+
+<button type="submit">Login</button>
+
+</form>
+
+</div>
+
+<div class="side-image">
+<img src="Birds.jpg">
+</div>
+
+</div>
+
+</body>
+</html>
